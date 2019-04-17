@@ -10,7 +10,7 @@ html.wf-active,html.wf-inactive{opacity: 1; transition: opacity .4s ease-out;}
 body{color: #222; background: #fff; font-family: 'Source Sans Pro', sans-serif; font-size: 1.6rem;}
 p{font-size: 1.6rem; margin: 0 0 16px 0; font-weight: 400; line-height: 1.6;}
 p:last-of-type{margin: 0;}
-a{color: rgba(243, 150, 168, 1);}
+a{color: rgb(239, 103, 112);}
 ul{font-size: 1.6rem; padding: 0 0 22px 30px; font-weight: 400; line-height: 1.6; list-style: outside disc; overflow: hidden;}
 ol{font-size: 1.6rem; padding: 0 0 22px 30px; font-weight:  400; line-height: 1.6; overflow: hidden;}
 li{position: relative;}
@@ -18,7 +18,7 @@ h1{font-size: calc(2.5rem + 1.5vw); margin: 0 0 10px; line-height: 140%; font-we
 h2{font-size: calc(2.0rem + 1vw); margin: 0 0 10px; line-height: 140%; font-weight: 800; display: block;  width: 100%;}
 h3{font-size: calc(1.8rem + .8vw); margin: 0 0 10px; font-weight: 600; width: 100%;}
 blockquote{width: 80%; max-width:700px; margin: 50px auto; font-style: italic; color: #555; padding: 1.2em 1.2em 1.2em 75px; border-left: 8px solid #ef4538; line-height: 1.6; position: relative; background: #eeeeee;}
-blockquote::before{font-family:Arial; content:"\201C"; color:rgba(243, 150, 168, 1); font-size:4em; position: absolute; left: 10px; top:-10px;}
+blockquote::before{font-family:Arial; content:"\201C"; color:rgb(239, 103, 112); font-size:4em; position: absolute; left: 10px; top:-10px;}
 img{max-width: 100%; height: auto; vertical-align: bottom; border: none;}
 /*.event_track{border:1px solid red}*/
 
@@ -27,7 +27,7 @@ img{max-width: 100%; height: auto; vertical-align: bottom; border: none;}
 .buttons.center {justify-content: center;}
 .buttons.right {justify-content: flex-end;}
 .button + .button {margin: 0 0 0 1em;}
-.button {display: inline-flex; align-items: center; margin: 0; padding: 0.75em 1em; background: rgba(243, 150, 168, 1); color: #fff; line-height: 1; border-radius: 0.25em; font-weight: 800; text-transform: uppercase; transition: 150ms ease; text-decoration: none; user-select: none;}
+.button {display: inline-flex; align-items: center; margin: 0; padding: 0.75em 1em; background: rgb(239, 103, 112); color: #fff; line-height: 1; border-radius: 0.25em; font-weight: 800; text-transform: uppercase; transition: 150ms ease; text-decoration: none; user-select: none;}
 .button i + span,
 .button span + i {margin-left: 0.5em;}
 .button:hover, .button:focus {box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);}
@@ -73,8 +73,8 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
 
 /*Header*/
 .headerWrap{width: 100%;}
-.header{width: 100%; max-width: 1200px; margin: 0 auto; padding: 10px; position: relative; display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center;}
-.header .logo{width: 50%; max-width: 90px;}
+.header{width: 100%; max-width: 1200px; margin: 0 auto; padding: 2em 1em; position: relative; display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center;}
+.header .logo{width: 50%; max-width: 160px; position: absolute; top: -20px; z-index: 99;}
 .header .logo a{display: block;}
 .header .logo img{width: 100%;}
 .header .mobile_icons{display: none;}
@@ -92,14 +92,14 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
     }
 
 /*Nav*/
-.nav{user-select: none; text-align: center; z-index: 10; display: flex; flex-flow: row wrap; align-items: center;}
+.nav{user-select: none; text-align: center; z-index: 10; display: flex; flex-flow: row wrap; align-items: center; width: 100%; justify-content: flex-end;}
 .nav .item{position: relative;}
 .nav .item a{margin:0 32px 0 0; display: block; color: #222; font-weight: 700; text-decoration: none; text-transform: uppercase; font-size: 2rem; transition: color 0.3s cubic-bezier(.25,.8,.25,1);}
-.nav .item a:hover, .nav .item a:focus{color: #407cd1;}
+.nav .item a:hover, .nav .item a:focus{color: #0077be;}
 .nav .item:last-child a{margin:0}
 .nav .item i{font-size: 1.2rem; cursor: pointer; margin: 0 0 0 6px;}
-.nav .item.open{background: rgba(255,255,255,.2);color: #407cd1;}
-.nav .item.open a{color: #407cd1;}
+.nav .item.open{background: rgba(255,255,255,.2);color: #0077be;}
+.nav .item.open a{color: #0077be;}
 .nav .item .drop_menu .item{display: block;}
 .nav .item .drop_menu{border-radius: 3px; padding:0; overflow: hidden; left: 0; opacity:0; position: absolute; top:-9999px; border: 1px solid #e4e4e4; background: rgba(255,255,255,1); white-space: nowrap; min-width: 200px; box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08); text-align: left; transition: opacity 0.35s}
 .nav > .drop_trigger:last-child .drop_menu{left: auto; right: 8px; text-align: right;}
@@ -218,10 +218,10 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
 
 .intro_text .image {position: relative;}
 .intro_text .image img {width: 100%;}
-.intro_text .image::before {content: ''; position: absolute; top: -4px; left: -4px; bottom: -4px; right: -4px; border: 2px solid #f396a8; border-radius: 50%;}
+.intro_text .image::before {content: ''; position: absolute; top: -4px; left: -4px; bottom: -4px; right: -4px; border: 2px solid rgb(239, 103, 112); border-radius: 50%;}
 .intro_text .details p {font-size: 2.2rem;}
 .intro_text .details p > i {position: relative; display: inline-block; color: #000;}
-.intro_text .details p > i::before {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; background: rgba(243, 150, 168, 0.25); height: 50%; z-index: -1;}
+.intro_text .details p > i::before {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; background: rgba(239, 103, 112, 0.2); height: 50%; z-index: -1;}
 
 .intro_text .socials {font-size: 2rem; display: flex; justify-content: center; margin: 1em 0;}
 .intro_text .socials a{display: flex; align-items: center; justify-content: center; margin: 0 0.5em; color: #222; border-radius: 0.15em; text-decoration: none; font-size: 2rem;}
@@ -232,7 +232,7 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
 .testimonial .contents {max-width: 968px; margin: 0 auto}
 
 /* Newsletter */
-.newsletter {background: #407cd1; color: #fff;}
+.newsletter {background: #0077be; color: #fff;}
 .newsletter .contents {max-width: 968px; margin: 0 auto; padding: 1.5em 0; display: flex; align-items: center; justify-content: space-between;}
 .newsletter .title {font-size: 2rem; line-height: 1; font-weight: 800;}
 .newsletter i {margin-right: 0.5em;}
@@ -254,10 +254,10 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
 
 .services .item.best-value {}
 .services .item .badges {position: absolute; top: 0; left: 0; right: 0; transform: translateY(-50%); display: flex; align-items: center; justify-content: center;}
-.services .item .badge {display: inline-block; padding: 0.5em 0.5em; background: #407cd1; color: #fff; font-weight: 800; border-radius: 0.25em; font-size: 1.4rem; text-transform: uppercase;     box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
+.services .item .badge {display: inline-block; padding: 0.5em 0.5em; background: #0077be; color: #fff; font-weight: 800; border-radius: 0.25em; font-size: 1.4rem; text-transform: uppercase;     box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
 
 /* Testimonial */
-.testimonial {background: #407cd1; margin: 3em auto; padding: 3em 0;}
+.testimonial {background: #0077be; margin: 3em auto; padding: 3em 0;}
 .testimonial h2 {text-align: center; color: #fff;}
 .testimonial .contents {max-width: 968px; margin: 0 auto; padding: 3em 0;}
 .testimonial .item .quote {font-weight: 600; font-size: 2.6rem; text-align: center; color: #fff; font-style: italic;}
@@ -395,9 +395,12 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
 .pagination li a.active{font-weight: 600; border-bottom: #f00 3px solid; padding: 0 1px;}
 
 /* Blog: Post List Widget */
-.post_list_widget{max-width: 1200px; margin: 3em auto; display: flex; flex-flow: row wrap;}
-.post_list_widget h2{width: 100%; margin: 0 10px 10px;}
-.post_list_widget a{text-decoration: none; display:block; color:inherit;}
+.post_list_widget{max-width: 1200px; margin: 6em auto;}
+.post_list_widget .item a{text-decoration: none; display:block; color:inherit;}
+.post_list_widget .details {margin: 0 0 3em;}
+.post_list_widget .details h1 {text-align: center;}
+.post_list_widget .details p {text-align: center;}
+.post_list_widget .group {display: flex; flex-flow: row wrap;}
 .post_list_widget .item{margin:0 10px 20px 10px; background: #fff; width: calc(33.333% - 20px); transition: all .2s ease-in-out; box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08); display: flex; flex-flow: column;}
 .post_list_widget .item .cover{position: relative; width: 100%; margin: 0 auto;}
 .post_list_widget .item .cover img{width:100%;}
@@ -536,12 +539,12 @@ button.button, input[type="submit"].button {cursor: pointer; font-family: inheri
     }
 
 /*Footer*/
-.footer_wrap{width: 100%; background: #f8f8f8; padding: 10px; margin: 20px 0 0 0;}
-.footer{width: 100%; max-width: 1200px; margin: 0 auto; overflow: hidden; text-align: center; color: rgba(0,0,0,.84);}
-.footer a{color: rgba(0,0,0,.84); text-decoration: none;}
+.footer_wrap{width: 100%; background: #0077be; padding: 10px; margin: 20px 0 0 0;}
+.footer{width: 100%; max-width: 1200px; margin: 0 auto; overflow: hidden; text-align: center; color: #fff;}
+.footer a{color: #fff; text-decoration: none;}
 
 .footer .social {font-size: 2rem; display: flex; justify-content: center; margin: 1em 0;}
-.footer .social a{display: flex; align-items: center; justify-content: center; margin: 0 0.5em; color: #222; border-radius: 0.15em; text-decoration: none; font-size: 2rem;}
+.footer .social a{display: flex; align-items: center; justify-content: center; margin: 0 0.5em; color: #fff; border-radius: 0.15em; text-decoration: none; font-size: 2rem;}
 .footer .social a:hover{}
 
 .footer .address{margin: 0 auto 5px;}
